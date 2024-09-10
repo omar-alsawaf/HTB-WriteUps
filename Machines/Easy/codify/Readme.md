@@ -64,3 +64,15 @@ back on the ssh we run the script again using __*__ as our password we'd get the
 ![password](password.png)
 
 use the found password to login again as root and you'll find the root user flag
+
+
+
+
+
+
+
+
+
+
+
+check it out on github [Codify]([https://github.com/username/repository/tree/main/directory](https://github.com/omar-alsawaf/HTB-WriteUps/tree/f6b17252ddf2cda3fb8d16e223075750f326dd49/Machines/Easy/codify))
