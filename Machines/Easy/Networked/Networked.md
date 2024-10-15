@@ -6,14 +6,6 @@ we first scan the machine for open ports we notice a web server on port 80
 
 ![NmapScan](nmap_scan.png)
 
-# Networked
-
-## Network Enumeration
-
-we first scan the machine for open ports we notice a web server on port 80 
-
-![NmapScan](nmap_scan.png)
-
 ## Web Fuzzing
 
 we search for subdonmain using ffuf we find a directory called backup , download the backup.tar folder we find the src code for the web application, on the upload.php we find a vector for an arbitrary file upload attack
