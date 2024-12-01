@@ -13,8 +13,7 @@ we add the subdomain to ```/etc/hosts``` the visit it to find a login page hosti
 A quick search reveals that the default credential are ```root``` and ```password```.
 ## Foothold
 ---
-Enumerating the host we find another user with the name ```Inorgaard``` where his comment section reveals that his password is ```Welcome2023!```.
-
+Enumerating the host we find another user with the name ```Inorgaard``` where his comment section reveals that his password is ```Welcome123!```.
 ![User](Inorgaard.png)
 we use the found credentials to ssh into the machine and find the user flag
 ![User_Flag](User_Flag.png)
